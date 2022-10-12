@@ -14,7 +14,8 @@
                 AddEdge(edge);
         }
 
-        public Dictionary<T, HashSet<T>> AdjacencyList => new();
+        public IEnumerable<T> Vertices => AdjacencyList.Keys;
+        public Dictionary<T, HashSet<T>> AdjacencyList { get; } = new ();
 
         public void AddVertex(T vertex)
         {
@@ -23,11 +24,11 @@
 
         public void AddEdge(Tuple<T, T> edge)
         {
-            if (!AdjacencyList.ContainsKey(edge.Item1) || !AdjacencyList.ContainsKey(edge.Item2)) 
-                return;
-
-            AdjacencyList[edge.Item1].Add(edge.Item2);
-            AdjacencyList[edge.Item2].Add(edge.Item1);
+            if (AdjacencyList.ContainsKey(edge.Item1) && AdjacencyList.ContainsKey(edge.Item2))
+            {
+                AdjacencyList[edge.Item1].Add(edge.Item2);
+                AdjacencyList[edge.Item2].Add(edge.Item1);
+            }
         }
 
         public override bool Equals(object? obj)
