@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternRunner", "PatternRunner\PatternRunner.csproj", "{2ACE28A3-0072-49C2-BE7E-71A7E8A15729}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatternRunner", "PatternRunner\PatternRunner.csproj", "{2ACE28A3-0072-49C2-BE7E-71A7E8A15729}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{C745F04D-8AEE-44C9-A4FD-538A4B03C7F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strategy", "Strategy\Strategy.csproj", "{C745F04D-8AEE-44C9-A4FD-538A4B03C7F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns.Test", "Patterns.Test\Patterns.Test.csproj", "{66247C35-1EBF-436F-A968-EC582D250C8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C745F04D-8AEE-44C9-A4FD-538A4B03C7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C745F04D-8AEE-44C9-A4FD-538A4B03C7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C745F04D-8AEE-44C9-A4FD-538A4B03C7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66247C35-1EBF-436F-A968-EC582D250C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66247C35-1EBF-436F-A968-EC582D250C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66247C35-1EBF-436F-A968-EC582D250C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66247C35-1EBF-436F-A968-EC582D250C8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
