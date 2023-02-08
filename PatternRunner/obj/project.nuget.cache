@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "e5z7pLbqrwcU4maE1Xe9r5PD2VqljB58WyxprIkDvMpsohBcmAYvyo/yaj29JnjT34y8ZFh+nLPb60D/OZW83w==",
+  "dgSpecHash": "U1emPOxVASO8FccyUI8gaQJneo/TyWC+ZDFQU8y/D1WTxpqpGtFplrZxOGAWiiMcm5uSAalMiqITuIEFXvyBvg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Home\\source\\repos\\RealWorld-DesignPatterns\\PatternRunner\\PatternRunner.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.12\\microsoft.netcore.app.host.win-x64.6.0.12.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512"
+  ],
   "logs": []
 }
