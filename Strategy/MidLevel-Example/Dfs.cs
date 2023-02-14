@@ -1,4 +1,5 @@
-﻿using Strategy.MidLevel_Example.Models;
+﻿
+using Common.Models;
 
 namespace Strategy.MidLevel_Example
 {

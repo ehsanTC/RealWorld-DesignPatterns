@@ -1,5 +1,5 @@
-﻿using Strategy.MidLevel_Example;
-using Strategy.MidLevel_Example.Models;
+﻿using Common.Models;
+using Strategy.MidLevel_Example;
 
 namespace Patterns.Test.StrategyPattern
 {

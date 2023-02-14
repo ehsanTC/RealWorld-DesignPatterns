@@ -1,4 +1,4 @@
-﻿namespace Strategy.MidLevel_Example.Models
+﻿namespace Common.Models
 {
     //
     // The graph data structure is copied from the https://www.koderdojo.com/
