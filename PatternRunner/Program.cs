@@ -16,6 +16,7 @@ namespace PatternRunner
                     Tuple.Create(5, 4),
                     Tuple.Create(4, 8), Tuple.Create(4, 9)
                 });
+            PrintGraph(graph);
 
             var patterns = new List<IPatternSpec<int>>
             {
@@ -36,13 +37,22 @@ namespace PatternRunner
                     return;
                 }
 
-                Console.WriteLine($"You selected the {selectedPattern.GetName()}.\n\n{selectedPattern.GetDescription()}");
+                Console.WriteLine($"You selected the {selectedPattern.GetName()}.\n\t{selectedPattern.GetDescription()}");
                 selectedPattern.ExecutePattern(graph);
             }
             catch (Exception)
             {
                 Console.WriteLine("The selected number is wrong!");
             }
+        }
+
+        private static void PrintGraph(Graph<int> graph)
+        {
+            Console.WriteLine("The graph is:");
+            Console.WriteLine("15 ───► 17");
+            Console.WriteLine(" └────► 5───►4───►8");
+            Console.WriteLine("             └───►9");
+            Console.WriteLine("\n");
         }
     }
 }

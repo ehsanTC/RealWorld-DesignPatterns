@@ -24,7 +24,7 @@ namespace Observer
             dfs.AddObserver(observer);
             dfs.Execute(inputGraph.Vertices.First());
 
-            Console.WriteLine("\nThe graph is iterated over and all of is node are met." +
+            Console.WriteLine("\nThe graph is iterated over and all of its nodes are met." +
                               $"\nThe result of adding all the nodes value is {(int)observer.AdditionResult}");
         }
     }
