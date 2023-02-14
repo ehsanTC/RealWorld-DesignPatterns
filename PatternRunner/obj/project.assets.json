@@ -24,6 +24,19 @@
         "runtime": {
           "bin/placeholder/Observer.dll": {}
         }
+      },
+      "Strategy/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Strategy.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Strategy.dll": {}
+        }
       }
     }
   },
@@ -37,12 +50,18 @@
       "type": "project",
       "path": "../Observer/Observer.csproj",
       "msbuildProject": "../Observer/Observer.csproj"
+    },
+    "Strategy/1.0.0": {
+      "type": "project",
+      "path": "../Strategy/Strategy.csproj",
+      "msbuildProject": "../Strategy/Strategy.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Common >= 1.0.0",
-      "Observer >= 1.0.0"
+      "Observer >= 1.0.0",
+      "Strategy >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -78,6 +97,9 @@
             },
             "C:\\Users\\Home\\source\\repos\\RealWorld-DesignPatterns\\Observer\\Observer.csproj": {
               "projectPath": "C:\\Users\\Home\\source\\repos\\RealWorld-DesignPatterns\\Observer\\Observer.csproj"
+            },
+            "C:\\Users\\Home\\source\\repos\\RealWorld-DesignPatterns\\Strategy\\Strategy.csproj": {
+              "projectPath": "C:\\Users\\Home\\source\\repos\\RealWorld-DesignPatterns\\Strategy\\Strategy.csproj"
             }
           }
         }

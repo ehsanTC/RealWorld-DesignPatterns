@@ -1,6 +1,7 @@
 ﻿using Common;
 using Common.Models;
 using Observer;
+using Strategy;
 
 namespace PatternRunner
 {
@@ -20,7 +21,8 @@ namespace PatternRunner
 
             var patterns = new List<IPatternSpec<int>>
             {
-                new ObserverPattern<int>()
+                new ObserverPattern<int>(),
+                new StrategyPattern<int>()
             };
 
             Console.WriteLine("Hello guys, please select the pattern number to starts with:");
