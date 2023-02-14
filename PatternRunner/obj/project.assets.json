@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
+      },
+      "Observer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Observer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Observer.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Core/Common.csproj",
+      "msbuildProject": "../Core/Common.csproj"
+    },
+    "Observer/1.0.0": {
+      "type": "project",
+      "path": "../Observer/Observer.csproj",
+      "msbuildProject": "../Observer/Observer.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Common >= 1.0.0",
+      "Observer >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Home\\.nuget\\packages\\": {}
@@ -34,7 +72,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Home\\source\\repos\\RealWorld-DesignPatterns\\Core\\Common.csproj": {
+              "projectPath": "C:\\Users\\Home\\source\\repos\\RealWorld-DesignPatterns\\Core\\Common.csproj"
+            },
+            "C:\\Users\\Home\\source\\repos\\RealWorld-DesignPatterns\\Observer\\Observer.csproj": {
+              "projectPath": "C:\\Users\\Home\\source\\repos\\RealWorld-DesignPatterns\\Observer\\Observer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
